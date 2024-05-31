@@ -39,16 +39,16 @@
 //console.log(task_09('png'));
 
 // Task 10
-const { password } = require('./task_10');
-console.log(password('dfghjkert'));
+//const { password } = require('./task_10');
+//console.log(password('dfghjkert'));
 
 // Task 11
-const task_11 = require('./task_11');
-console.log(task_11(33));
+//const task_11 = require('./task_11');
+//console.log(task_11(33));
 
 // Task 12
 // напишите require самостоятельно
-// console.log(fileSize(2233));
+//console.log(fileSize(2233));
 
 // Task 13
 // const task_13 = require('./task_13');
