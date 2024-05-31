@@ -48,19 +48,20 @@
 
 // Task 12
 // напишите require самостоятельно
+//const { fileSize } = require("./task_12");
 //console.log(fileSize(2233));
 
 // Task 13
-// const task_13 = require('./task_13');
-// console.log(task_13(['t', 'b'], ['t', 'b']));
+//const task_13 = require('./task_13');
+//console.log(task_13(['t', 'b'], ['t', 'b']));
 
 // Task 14
-// const task_14 = require('./task_14');
-// console.log(task_14({'a' : 2}, {'a': 4}));
+//const task_14 = require('./task_14');
+//console.log(task_14({ 'a': 2 }, { 'a': 4 }));
 
 // Task 15
-// const {eqObject} = require('./task_15');
-// const {eqArray} = require('./task_15');
+//const { eqObject } = require('./task_15');
+//const { eqArray } = require('./task_15');
 
-// console.log(eqObject({'a' : 2}, {'a': 2}));
-// console.log(eqObject(['t', 'b'], ['t', 'b']));
+//console.log(eqObject({ 'a': 2 }, { 'a': 4 }));
+//console.log(eqArray(['t', 'b'], ['t', 'b']));

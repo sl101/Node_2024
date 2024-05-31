@@ -5,5 +5,5 @@
 // Равные объекты также подразумеваются, что количество записей в них одинаковое.
 // файл index.js должен реализовывать експорт модуля из файла equal_object.js под именем eqObject.
 
-const eqObject = require ('./equal_object');
+const eqObject = require('./equal_object');
 module.exports = eqObject;

@@ -8,5 +8,5 @@
 // все символы всегда - латиница
 // Файл index.js должен реализовывать експорт модуля file_size.js через module.exports.
 
-const fileSize = require ('./file_size');
-module.exports = fileSize;
+const fileSize = require('./file_size');
+module.exports = { fileSize };
