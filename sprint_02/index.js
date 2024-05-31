@@ -30,16 +30,17 @@
 //console.log(isWhitespace(' Humma Kavula ')); // ожидаю true
 
 // Task 08
-const task_08 = require('./task_08');
-console.log(task_08(['3', 4, '5d', 6])); // ожидаю [3, 4, 6]
+//const task_08 = require('./task_08');
+//console.log(task_08(['3', 4, '5d', 6])); // ожидаю [3, 4, 6]
 
 // Task 09
 // напишите require самостоятельно
-// console.log(task_09('png'));
+//const task_09 = require("./task_09");
+//console.log(task_09('png'));
 
 // Task 10
-// const {password} = require('./task_10');
-// console.log(password('dfghjkert'));
+//const { password } = require('./task_10');
+//console.log(password('dfghjkert'));
 
 // Task 11
 // const task_11 = require('./task_11');
