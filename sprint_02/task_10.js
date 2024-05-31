@@ -5,8 +5,10 @@
 module.exports.password = function (str) {
 	const strLenth = str.trim().length;
 
+	if (strLenth <= 8) return false;
+
 	const strSet = new Set(str.trim());
 	const setLength = strSet.size;
 
-	return strLenth > 8 && strLenth === setLength;
+	return strLenth === setLength;
 };
