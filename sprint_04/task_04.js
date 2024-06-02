@@ -7,7 +7,10 @@
 const fs = require('fs');
 const path = require('path');
 
-module.exports = function  (fileName) {
-   
+module.exports = function (fileName) {
+	const filePath = path.join(__dirname, fileName);
+	const data = fs.readFileSync(filePath, { encoding: 'utf8', flag: 'r' });
+	const datasArray = data.split('');
+	return datasArray.includes('7');
 }
 

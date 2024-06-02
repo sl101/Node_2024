@@ -8,7 +8,10 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = function (fileName) {
-   
-
+	const filePath = path.join(__dirname, fileName);
+	const data = fs.readFileSync(filePath, { encoding: 'utf8', flag: 'r' });
+	let dataArray = data.split(' ');
+	dataArray = dataArray.filter(item => item !== '');
+	return dataArray.join(' ');
 }
 

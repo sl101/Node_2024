@@ -9,9 +9,11 @@
 // не забываем пробел после последней строки!!!
 
 const fs = require('fs');
-const path = require('path');
 
 module.exports = function (s) {
-   
+	const filePath = './d_04/t_07.dat';
+	let text = s.split('').join(" ");
+	text = text + ' ';
+	fs.writeFileSync(filePath, text, { encoding: 'utf8', flag: 'w' });
 }
 

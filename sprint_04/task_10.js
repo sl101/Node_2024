@@ -6,9 +6,9 @@
 
 
 const fs = require('fs');
-const path = require('path');
 
 module.exports = function (fileFrom, fileTo) {
-
+	const data = fs.readFileSync(fileFrom, { encoding: 'utf8', flag: 'r' });
+	fs.writeFileSync(fileTo, data, { encoding: 'utf8', flag: 'w' });
 }
 

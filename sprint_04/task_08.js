@@ -9,6 +9,8 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = function (arr) {
-
+	const filePath = './d_04/t_08.txt';
+	const text = arr.join("\r\n");
+	fs.writeFileSync(filePath, text, { encoding: 'utf8', flag: 'w' });
 }
 
