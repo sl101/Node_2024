@@ -37,5 +37,5 @@
 //console.log(task_09('./d_01/d_02'));
 
 // Task 10
-//const task_10 = require('./task_10');
-//console.log(task_10('./d_01/d_02'));
+const task_10 = require('./task_10');
+console.log(task_10('./d_01/d_02'));

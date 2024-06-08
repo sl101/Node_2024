@@ -8,16 +8,13 @@ const fs = require('fs');
 module.exports = function (folderName) {
 	const folderPath = path.join(__dirname, folderName);
 	const folderFilesArray = fs.readdirSync(folderPath);
-
 	const folder = {};
 
 	folderFilesArray.forEach(element => {
 		const filePath = path.join(folderPath, element);
 
-		const fileName = path.basename(filePath).split('.')[0];
 		const fileSize = fs.statSync(filePath).size;
-
-		folder[fileName] = fileSize;
+		folder[element] = fileSize;
 	});
 
 	return folder;
