@@ -6,6 +6,7 @@
 const getCSV = require('./get_csv');
 const params = {
 	delimiter: ';',
+	columns: true,
 	encoding: 'utf8',
 	trim: true
 };
