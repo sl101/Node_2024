@@ -9,8 +9,8 @@
 // для запроса используем пакет sync-mysql
 
 const task_01 = require('./task_01');
-const query = 'SELECT * FROM cars WHERE year = 2015 OR year = 2017';
+const query = 'SELECT model FROM cars WHERE year = 2015 OR year = 2017';
 
 module.exports = function () {
-	return task_01(query);
+	return task_01(query).map(car => car.model);
 };

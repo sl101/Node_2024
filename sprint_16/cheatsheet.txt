@@ -1,0 +1,43 @@
+// SQL query
+select * from Cars
+// Sequelize
+const result = await Cars.findAll();
+
+// SQL query
+select * from Cars limit 1
+// Sequelize
+const result = await Cars.findOne();
+
+// SQL query
+select * from Cars where model = 'megane'
+// Sequelize
+const result = await Cars.findAll({
+	where : {
+		model : 'megane'
+	}
+});
+
+
+// SQL query
+select make, year, cost from Cars where model = 'megane' 
+// Sequelize
+const result = await Cars.findAll({
+	where : {
+		model : 'megane'
+	},
+	attributes: ['make', 'year', 'cost']
+});
+
+// SQL query
+select * from Cars order by cost asc
+// Sequelize
+const result = await Cars.findAll({
+	order : 'cost ASC'
+});
+
+// SQL query
+select * from Cars where make in ('ford', 'toyota')
+// Sequelize
+const result = await Cars.findAll({
+	where : {'make' : ['ford', 'toyota']}
+});
