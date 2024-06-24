@@ -7,5 +7,5 @@ const Processors = db.processors;
 
 module.exports = async function () {
 	const result = await Processors.findAll();
-	console.log(result.map(proc => proc.title));
+	return result.map(proc => proc.title);
 };
